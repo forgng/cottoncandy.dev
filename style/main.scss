@@ -1,9 +1,39 @@
 :root {
+  --text-color: #ffffff;
   --main-bg-color: #44475a;
+  --pink: #ee88ad;
 }
 
 body {
   background-color: var(--main-bg-color);
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .github-icon-container {
+    height: 45px;
+    width: 45px;
+    border-radius: 9999px;
+    background-color: #ee88ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .hero {
@@ -18,5 +48,18 @@ body {
   background-position: center; /* Center the image */
 }
 .logo-container {
-  width: 625px;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 8rem;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-color);
 }
