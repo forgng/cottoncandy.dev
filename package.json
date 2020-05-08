@@ -5,7 +5,7 @@
   "author": "@forgng <gianlucachiap@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel index.html && cp -a ./public/. ./dist/",
     "build": "parcel build index.html"
   },
   "devDependencies": {
