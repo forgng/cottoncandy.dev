@@ -18,5 +18,6 @@ body {
   background-color: var(--main-bg-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
+  color: var(--text-color)
 }
 `;
