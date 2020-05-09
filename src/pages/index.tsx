@@ -7,6 +7,7 @@ import HeroBackground from "../components/HeroBackground";
 import Layout from "../components/layout";
 import HeroLogo from "../components/HeroLogo";
 import { GlobalStyle } from "../styles";
+import ExampleImage from "../components/image";
 
 const IndexPage = () => (
   <Layout>
@@ -21,10 +22,7 @@ const IndexPage = () => (
     <Page>
       <Title>Colorful theme for Visual Studio Code</Title>
       <ImageExampleContainer>
-        <ImageExample
-          src="./images/example.png"
-          alt="example typescript file"
-        />
+        <ExampleImage />
       </ImageExampleContainer>
       {/* <div class="section">
         <h2 class="title">Install</h2>
@@ -68,9 +66,11 @@ const LogoContainer = styled.div`
   width: 600px;
   z-index: 1;
 `;
-const Logo = styled.img``;
 
-const Page = styled.div``;
+const Page = styled.div`
+  width: 900px;
+  margin: 0 auto;
+`;
 const Title = styled.h1``;
 const ImageExampleContainer = styled.div``;
 
