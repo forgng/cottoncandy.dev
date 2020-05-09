@@ -4,9 +4,10 @@ import styled from "styled-components/macro";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import HeroBackground from "../components/HeroBackground";
+import Layout from "../components/layout";
 
 const IndexPage = () => (
-  <>
+  <Layout>
     <SEO title="Home" />
     <Hero>
       <HeroBackground />
@@ -48,10 +49,12 @@ const IndexPage = () => (
         made with 🍺 by <a href="https://forgng.ovrvu.com">forgng</a>
       </Credits>
     </Footer>
-  </>
+  </Layout>
 );
 
-const Hero = styled.div``;
+const Hero = styled.div`
+  height: 95vh;
+`;
 
 const LogoContainer = styled.div``;
 const Logo = styled.img``;

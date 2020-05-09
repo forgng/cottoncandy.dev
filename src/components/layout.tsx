@@ -1,9 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import "normalize.css";
 
 function Layout({ children }: React.PropsWithChildren<{}>) {
-  return <></>
+  return <>{children}</>;
 }
 
-export default Layout
+export default Layout;
