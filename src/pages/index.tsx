@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components/macro";
-import Image from "../components/image";
 import SEO from "../components/seo";
 import HeroBackground from "../components/HeroBackground";
 import Layout from "../components/layout";
 import HeroLogo from "../components/HeroLogo";
 import { GlobalStyle } from "../styles";
-import ExampleImage from "../components/image";
+import ExampleImage from "../components/ExampleImage";
 
 const IndexPage = () => (
   <Layout>
@@ -24,8 +23,8 @@ const IndexPage = () => (
       <ImageExampleContainer>
         <ExampleImage />
       </ImageExampleContainer>
-      {/* <div class="section">
-        <h2 class="title">Install</h2>
+      <div>
+        <h2>Install</h2>
         <h3>Install using Command Palette</h3>
         <ul>
           <li>Go to View -> Command Palette or press</li>
@@ -37,13 +36,11 @@ const IndexPage = () => (
         <h3>Install from source</h3>
         <pre>
           <code>
-            <span class="no-select">$ </span>git clone
-            https://github.com/forgng/Cotton-Candy.git
+            <span>$ </span>git clone https://github.com/forgng/Cotton-Candy.git
             ~/.vscode/extensions/theme-cotton-candy
           </code>
         </pre>
       </div>
-    </div> */}
     </Page>
     <Footer>
       <Credits>
@@ -70,13 +67,24 @@ const LogoContainer = styled.div`
 const Page = styled.div`
   width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
-const Title = styled.h1``;
-const ImageExampleContainer = styled.div``;
+const Title = styled.h1`
+  margin-top: 10px;
+  font-size: 5rem;
+`;
+const ImageExampleContainer = styled.div`
+  width: 700px;
+`;
 
-const ImageExample = styled.img``;
-
-const Footer = styled.footer``;
+const Footer = styled.footer`
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const Credits = styled.p``;
 
 export default IndexPage;
