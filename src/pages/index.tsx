@@ -7,6 +7,8 @@ import Layout from "../components/layout";
 import HeroLogo from "../components/HeroLogo";
 import { GlobalStyle } from "../styles";
 import ExampleImage from "../components/ExampleImage";
+import VSCodeIcon from "../components/VSCodeIcon";
+import GithubIcon from "../components/GithubIcon";
 
 const IndexPage = () => (
   <Layout>
@@ -43,13 +45,22 @@ const IndexPage = () => (
       </div>
     </Page>
     <Footer>
+      <IconsContainer>
+        <a href="">
+          <VSCodeIcon fill="#fff" />
+        </a>
+        <a href="">
+          <GithubIcon fill="#fff" />
+        </a>
+      </IconsContainer>
       <Credits>
-        made with 🍺 by <a href="https://forgng.ovrvu.com">forgng</a>
+        made with 🍺 by <a href="https://forgng.ovrvu.page">forgng</a>
       </Credits>
     </Footer>
   </Layout>
 );
 
+const IconsContainer = styled.div``;
 const Hero = styled.div`
   display: flex;
   justify-content: center;
@@ -77,6 +88,11 @@ const Title = styled.h1`
 `;
 const ImageExampleContainer = styled.div`
   width: 700px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  img {
+    border-radius: 5px;
+  }
 `;
 
 const Footer = styled.footer`
