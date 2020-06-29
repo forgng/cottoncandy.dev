@@ -69,7 +69,14 @@ const IndexPage = () => (
           </a>
         </IconsContainer>
         <Credits>
-          made with 🍺 by <a href="https://forgng.ovrvu.page">forgng</a>
+          made with 🍺 by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://forgng.ovrvu.page"
+          >
+            forgng
+          </a>
         </Credits>
       </Footer>
     </Page>
