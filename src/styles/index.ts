@@ -14,10 +14,18 @@ a {
   }
 }
 
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
   background-color: var(--main-bg-color);
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
-  color: var(--text-color)
+  color: var(--text-color);
+  width: 100%;
 }
 `;

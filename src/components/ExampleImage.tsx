@@ -15,7 +15,12 @@ const ExampleImage = () => {
     }
   `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      alt="Theme example JS"
+    />
+  );
 };
 
 export default ExampleImage;

@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title }) {
+function SEO() {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -11,14 +11,16 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            lang
           }
         }
       }
     `
   );
-
-  const metaDescription = description || site.siteMetadata.description;
-
+  console.log("site", site);
+  const metaDescription = site.siteMetadata.description;
+  const title = site.siteMetadata.title;
+  const lang = site.siteMetadata.lang;
   return (
     <Helmet
       htmlAttributes={{
@@ -59,7 +61,7 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]}
     />
   );
 }

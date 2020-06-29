@@ -3,6 +3,7 @@ module.exports = {
     title: `Cotton Candy`,
     description: `Colorful theme for VSCode`,
     author: `@forgng`,
+    lang: "en",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
