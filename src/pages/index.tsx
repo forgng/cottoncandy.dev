@@ -28,7 +28,8 @@ const IndexPage = () => (
       </LogoContainer>
     </Hero>
     <Page>
-      <Title>Colorful theme for Visual Studio Code</Title>
+      <Title>Colorful Dark Theme</Title>
+      <Title>🍭🍬🦄</Title>
       <Center>
         <ImageExampleContainer>
           <ExampleImage />
@@ -45,8 +46,7 @@ const IndexPage = () => (
         <h3>Install from source</h3>
         <pre>
           <code>
-            <span>$ </span>git clone https://github.com/forgng/Cotton-Candy.git
-            <br />
+            git clone https://github.com/forgng/Cotton-Candy.git
             ~/.vscode/extensions/theme-cotton-candy
           </code>
         </pre>
