@@ -46,10 +46,18 @@ const IndexPage = () => (
     </Page>
     <Footer>
       <IconsContainer>
-        <a href="">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://marketplace.visualstudio.com/items?itemName=forgng.theme-cotton-candy"
+        >
           <VSCodeIcon fill="#fff" />
         </a>
-        <a href="">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/forgng/cotton-candy-vscode-theme"
+        >
           <GithubIcon fill="#fff" />
         </a>
       </IconsContainer>
@@ -60,7 +68,12 @@ const IndexPage = () => (
   </Layout>
 );
 
-const IconsContainer = styled.div``;
+const IconsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+`;
+
 const Hero = styled.div`
   display: flex;
   justify-content: center;
@@ -99,6 +112,7 @@ const Footer = styled.footer`
   height: 250px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 `;
 const Credits = styled.p``;
