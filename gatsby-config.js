@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Cotton Candy`,
-    description: `Colorful theme`,
+    description: `Colorful theme for VSCode`,
     author: `@forgng`,
   },
   plugins: [
