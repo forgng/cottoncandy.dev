@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import SEO from "../components/seo";
 import HeroBackground from "../components/HeroBackground";
 import HeroLogo from "../components/HeroLogo";
@@ -8,18 +8,11 @@ import { GlobalStyle } from "../styles";
 import ExampleImage from "../components/ExampleImage";
 import VSCodeIcon from "../components/VSCodeIcon";
 import GithubIcon from "../components/GithubIcon";
-import { Helmet } from "react-helmet";
 import "normalize.css";
 
 const IndexPage = () => (
   <>
     <GlobalStyle />
-    <Helmet>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-        rel="stylesheet"
-      />
-    </Helmet>
     <SEO />
     <Hero>
       <HeroBackground />

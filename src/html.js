@@ -15,6 +15,10 @@ export default function HTML(props) {
           site="DKHHNWGR"
           defer
         ></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
